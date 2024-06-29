@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    color: white;
+}
+ header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8% ;
+    position: relative;
+}
+nav .logo{
+    width: 5px; 
+    height: 5px;
+    cursor: pointer;
+    
+}
+.button1{
+background-color: red;
+margin: 0px;
+padding: 10px; 
+color: white;
+float: right;
+border-radius:5px ;
+font-weight: 600;
+padding: 7px 20px;
+cursor: pointer;
+margin-top: 0;
+margin-left: 5px;
+margin-right: 5px;
+}
+.button{
+background-color: transparent;
+margin: 0px;
+padding: 7px 20px;
+color: white;
+float: right;
+border: 1px white solid;
+border-radius: 5px;
+font-weight: 600;
+cursor: pointer;
+display: inline flex;
+margin-top: 0;
+margin-left: 5px;
+margin-right: 5px;
+}
+.button img{
+width: 10px;
+}
+div.content{
+    width: 1050px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    position: absolute;
+}
+.content h1 {
+ text-align:center ;
+ font: size 80px;
+ line-height: 100px;
+ font-weight: 800;
+}
+.content h3{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 80;
+
+}
+.content p{
+    text-align: center;
+    font-size: 20px;
+}
+.email {
+    margin-top: 30px;
+    margin-left: 20px;
+    max-width: 650px;
+    align-items: center;
+    display: flex
+    overflow hidden;
+}
+.email input {
+    display: flex;
+    padding: 10px 18px;
+    margin-left: 300px;
+    margin-top: 400px;
+    font-weight: 600;
+    font-size: 15px;
+    height: 50px;
+    width: 500px;
+    background-color: transparent;
+    color: #fff
+}
+.email button{
+    border-radius: 4px;
+    padding: 15px 15px;
+    background-color: red;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 455px;
+    margin-top: 10px;
+   
+}.email button img {
+    width: 10px;
+}
+.features{
+    border-top:8px grey solid ;
+    font-size: 22px;
+    padding: 50px 12%;
+    border-bottom: 8px grey solid ;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-top: 40px;
+   
+}
+.img-col{
+    flex-basis: 50%;
+    margin-top: 20px;
+ 
+}
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+ 
+}
+.text-col h2{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text-col p{
+    font-weight: 500;
+    text-align: center;
+}
+.language{
+   background-color: transparent;
+   color: white;
+   border: 1px white solid;
+} 
+.language img{
+    width: 8px;
+
+}
+.footer{
+    margin-left: 20px;
+}
+.footer p{
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="logo.png" alt="">
+            </div>
+            <div>
+            <button class="button1">Sign in</button>
+            <button class="button">English <img src="down arrow.jpeg" alt=""></button>
+            </div>
+        </nav>
+        <div class="content">
+           <h1>Unlimited movies,TV shows and more</h1>
+           <h3>Watch anywhere. Cancle anytime</h3>
+           <p>Ready to watch? Enter your email to create or restart your membership </p>
+        </div>
+    <form class="email">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Get Started <img src="right arrow.png" alt=""></button>
+    </form>
+</header>
+<div class="features">
+    <div class="row">
+        <div class="text-col">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs,playstations,Xbox, <br> Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="img-col">
+            <img src="feature 1.jpeg" alt="">
+        </div>
+    </div>
+<div class="row">
+    <div class="text-col">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favourites easily and always have <br> something to watch.</p>
+    </div>
+    <div class="img-col">
+        <img src="feature 2.jpeg" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="text-col">
+        <h2>Watch everywhere</h2>
+        <p>Stream unlimited movies and TV shows on your <br> phone, tablet, laptop, and TV.</p>
+    </div>
+    <div class="img-col">
+        <img src="feature 3.jpeg" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="text-col">
+        <h2>Create profiles for kids</h2>
+        <p>Send children on adventures with their favourite <br> characters in a space made just for them—free <br> with your membership.</p>
+    </div>
+    <div class="img-col">
+        <img src="feature 4.jpeg" alt="">
+    </div>
+</div>
+</div>
+<div class="footer">
+    <h2>Question? call 000-000-0000</h2>
+
+    <div class="row">
+        <div class="col">
+            <a href="#">FAQ</a><br>
+            <a href="#">Inverstors Relations</a><br>
+            <a href="#">Privacy</a><br>
+            <a href="#">Speed Test</a><br>
+        </div>
+        <div class="col">
+            <a href="#">Help Center</a><br>
+            <a href="#">Jobs</a><br>
+            <a href="#">Cookies Preferences</a><br>
+            <a href="#">Legal Notices</a><br>
+        </div>
+        <div class="col">
+            <a href="#">Accounts</a><br>
+            <a href="#">Ways to Watch</a><br>
+            <a href="#">Corporate Information</a><br>
+            <a href="#">Only on Netflix</a><br>
+        </div>
+        <div class="col">
+            <a href="#">Media Centre</a><br>
+            <a href="#">Terms of Use</a><br>
+            <a href="#">Contact us</a><br>
+        </div>
+    </div>
+    <button class="language">English <img src="down arrow.jpeg" alt=""></button>
+    <p class="copyright-txt">Netflix India</p>
+</div>
+    
+</body>
+</html>
